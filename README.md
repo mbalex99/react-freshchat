@@ -10,7 +10,7 @@ React Freshchat is a wrapper on top of Freshchat (see oficial doc here https://d
 
 ### Example
 
-```
+```jsx
 import React from 'react'
 import FreshChat from 'react-freshchat'
 
@@ -19,9 +19,9 @@ class App extends React.Component {
   render() {
     return <div>
       <FreshChat
-        token={config.freshchat.token}
-        email: 'user@email.com',
-        first_name: '...',
+        token="YOUR_FRESH_CHAT_TOKEN"
+        email="REPLACE_ME"
+        first_name="REPLACE_ME",
         onInit={widget => {
           /* Use `widget` instead of `window.fcWidget`
             widget.user.setProperties({
